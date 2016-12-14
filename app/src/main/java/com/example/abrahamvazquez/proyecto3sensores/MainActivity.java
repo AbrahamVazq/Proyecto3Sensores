@@ -308,6 +308,13 @@ public class MainActivity extends ActionBarActivity {
                         public void run() {
                             textStatus.setText(msgReceived);
                         }});
+                    try
+                    {
+                        Thread.sleep(2000);
+                    }catch(InterruptedException ie)
+                    {
+                        ie.printStackTrace();
+                    }
 
                 } catch (IOException e) {
                     // TODO Auto-generated catch block
